@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            width: 600px;
+            margin: 50px auto;
+           
+        }
+        ul#ul{
+            width: 100%;
+            padding: 0;
+            margin:0;
+            display: flex;
+            background: url("board.png");
+            background-size: cover;
+        }
+        ul#ul li{
+            list-style-type: none;
+            width: 70px;
+            height: 450px;
+            margin-left: 5px;
+           
+        }
+        ul#out{
+            position: absolute;
+            top:0;
+            width: 100%;
+            padding: 0;
+            margin:0;
+            display: flex;
+            background: url("board2.png");
+            background-size: cover;
+            z-index: 1;
+        }
+        ul#out li{
+            list-style-type: none;
+            width: 70px;
+            height: 450px;
+            margin-left: 13px;
+            /* background-color: blue */
+        }
+        .bolinha{
+            position: absolute;
+            top:0px;
+            left: 15px;
+            width: 65px;
+            height: 65px;
+            background-color: darkblue;
+            border-radius: 360px;
+            z-index: 0;
+        }
+        
+        #pipe{
+            position: absolute;
+            left: 0px;
+            left: 0px;
+            height: 50px;
+            width: 10px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 0px 0px 180px 0px;
+            background-color: darkgray;
+            transition: width 1s;
+        }
+   
+    </style>
+</head>
+<body>
+
+        <div>
+            <div id="pipe">
+                
+            </div>
+            <ul id="ul">
+                
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="out">
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+            </ul>
+        </div>
+
+</html>
