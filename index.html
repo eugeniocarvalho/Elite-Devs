@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div{
-            position: relative;
-            width: 600px;
-            margin: 50px auto;
-           
-        }
-        ul#ul{
-            width: 100%;
-            padding: 0;
-            margin:0;
-            display: flex;
-            background: url("background/board.png");
-            background-size: cover;
-        }
-        ul#ul li{
-            list-style-type: none;
-            width: 70px;
-            height: 450px;
-            margin-left: 5px;
-           
-        }
-        ul#out{
-            position: absolute;
-            top:0;
-            width: 100%;
-            padding: 0;
-            margin:0;
-            display: flex;
-            background: url("background/board2.png");
-            background-size: cover;
-            z-index: 1;
-        }
-        ul#out li{
-            list-style-type: none;
-            width: 70px;
-            height: 450px;
-            margin-left: 13px;
-        }
-        
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <title>Ligue-4</title>
+    <div class="header">
+      <h1 id="header-text">Ligue-4</h1>
+      <div class="buttons">
+        <button id="button-reset">RESET</button>
+        <button id="button-regras">REGRAS</button>   
+      </div>
+    </div>
+    
+  </head>
 <body>
 
         <div>
             <div id="pipe">
-                
+
             </div>
             <ul id="ul">
-                
+
                 <li></li>
                 <li></li>
                 <li></li>
@@ -72,8 +40,5 @@
                <li class="lis"></li>
             </ul>
         </div>
-</head>
-<body>
-    
-</body>
-</html>
+
+</html> 
