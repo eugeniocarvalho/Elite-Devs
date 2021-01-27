@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            width: 600px;
+            margin: 50px auto;
+           
+        }
+        ul#ul{
+            width: 100%;
+            padding: 0;
+            margin:0;
+            display: flex;
+            background: url("background/board.png");
+            background-size: cover;
+        }
+        ul#ul li{
+            list-style-type: none;
+            width: 70px;
+            height: 450px;
+            margin-left: 5px;
+           
+        }
+        ul#out{
+            position: absolute;
+            top:0;
+            width: 100%;
+            padding: 0;
+            margin:0;
+            display: flex;
+            background: url("background/board2.png");
+            background-size: cover;
+            z-index: 1;
+        }
+        ul#out li{
+            list-style-type: none;
+            width: 70px;
+            height: 450px;
+            margin-left: 13px;
+        }
+        
+    </style>
+</head>
+<body>
+
+        <div>
+            <div id="pipe">
+                
+            </div>
+            <ul id="ul">
+                
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="out">
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+               <li class="lis"></li>
+            </ul>
+        </div>
+</head>
+<body>
+    
+</body>
+</html>
