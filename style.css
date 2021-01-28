@@ -44,7 +44,7 @@ ul#ul{
   padding: 0;
   margin:0;
   display: flex;
-  background: url("board.png");
+  background: url("background/board.png");
   background-size: cover;
 }
 ul#ul li{
@@ -61,7 +61,7 @@ ul#out{
   padding: 0;
   margin:0;
   display: flex;
-  background: url("board2.png");
+  background: url("background/board2.png");
   background-size: cover;
   z-index: 1;
 }
