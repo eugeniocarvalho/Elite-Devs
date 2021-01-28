@@ -1,96 +1,104 @@
-
-
 .header {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 4rem;
 }
+
 #header-text {
-margin-right: 16rem;
-width: 60%;
-font-size: 55px;
-margin-left: 39rem;
+  /* width: 60%; */
+  font-size: 3.438rem;
 }
+
 .buttons {
-  margin-inline-end: 5rem;
   border: 0;
   border-style: none;
   border-width: 0;
 }
+
 #button-reset {
-  margin-right: 4rem;
+  margin-right: 2rem;
   border-radius: 3px;
-  padding: 4px;
+  padding: 0.25rem;
   background-color: dimgray;
   color: white;
 }
+
 #button-regras {
   border-radius: 6px;
-  padding: 4px;
+  padding: .2rem;
   background-color: lightcoral;
 
 }
 
-
-div{
+div {
   position: relative;
-  width: 600px;
-  margin: 50px auto;
-
+  /* width: 37.5rem; */
+  display: flex;
 }
-ul#ul{
+
+.content {
+  width: 37.5rem;
+  margin: auto;
+  display: flex;
+}
+
+ul#ul {
   width: 100%;
   padding: 0;
-  margin:0;
+  margin: 0;
   display: flex;
-  background: url("board.png");
+  background: url("background/board.png");
   background-size: cover;
 }
-ul#ul li{
+
+ul#ul li {
   list-style-type: none;
-  width: 70px;
-  height: 450px;
-  margin-left: 5px;
+  width: 1.375rem;
+  height: 28.125rem;
+  /* margin-left: 5px; */
 
 }
-ul#out{
+
+ul#out {
   position: absolute;
-  top:0;
-  width: 100%;
+  top: 0;
+  width: 50%;
   padding: 0;
-  margin:0;
+  margin: 0;
   display: flex;
-  background: url("board2.png");
+  background: url("background/board2.png");
   background-size: cover;
   z-index: 1;
 }
-ul#out li{
+
+ul#out li {
   list-style-type: none;
-  width: 70px;
-  height: 450px;
+  width: 4.375rem;
+  height: 28.125rem;
   margin-left: 13px;
   /* background-color: blue */
 }
-.bolinha{
+
+.bolinha {
   position: absolute;
-  top:0px;
-  left: 15px;
-  width: 65px;
-  height: 65px;
+  top: 0px;
+  left: 0.938rem;
+  width: 4.063rem;
+  height: 4.063rem;
   background-color: darkblue;
   border-radius: 360px;
   z-index: 0;
 }
 
-#pipe{
+#pipe {
   position: absolute;
   left: 0px;
   left: 0px;
-  height: 50px;
-  width: 10px;
+  height: 3.125rem;
+  width: 0.625rem;
   padding: 0px;
   margin: 0px;
-  border-radius: 0px 0px 180px 0px;
+  border-radius: 0px 0px 11.25rem 0px;
   background-color: darkgray;
 }
