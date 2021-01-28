@@ -1,30 +1,23 @@
-
-
 .header {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: auto 4rem;
 }
+
 #header-text {
-margin-right: 16rem;
-width: 60%;
-font-size: 55px;
-margin-left: 39rem;
+  font-size: 4rem;
 }
-.buttons {
-  margin-inline-end: 5rem;
-  border: 0;
-  border-style: none;
-  border-width: 0;
-}
+
+
 #button-reset {
-  margin-right: 4rem;
+  margin-right: 2rem;
   border-radius: 3px;
   padding: 4px;
   background-color: dimgray;
   color: white;
 }
+
 #button-regras {
   border-radius: 6px;
   padding: 4px;
@@ -32,49 +25,53 @@ margin-left: 39rem;
 
 }
 
-
-div{
+.content {
   position: relative;
   width: 600px;
   margin: 50px auto;
 
 }
-ul#ul{
+
+ul#ul {
   width: 100%;
   padding: 0;
-  margin:0;
+  margin: 0;
   display: flex;
-  background: url("board.png");
+  background: url("background/board.png");
   background-size: cover;
 }
-ul#ul li{
+
+ul#ul li {
   list-style-type: none;
   width: 70px;
   height: 450px;
   margin-left: 5px;
 
 }
-ul#out{
+
+ul#out {
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
   padding: 0;
-  margin:0;
+  margin: 0;
   display: flex;
-  background: url("board2.png");
+  background: url("background/board2.png");
   background-size: cover;
   z-index: 1;
 }
-ul#out li{
+
+ul#out li {
   list-style-type: none;
   width: 70px;
   height: 450px;
   margin-left: 13px;
   /* background-color: blue */
 }
-.bolinha{
+
+.bolinha {
   position: absolute;
-  top:0px;
+  top: 0px;
   left: 15px;
   width: 65px;
   height: 65px;
@@ -83,7 +80,7 @@ ul#out li{
   z-index: 0;
 }
 
-#pipe{
+#pipe {
   position: absolute;
   left: 0px;
   left: 0px;
