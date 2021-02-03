@@ -18,17 +18,35 @@
 
 #button-reset {
   margin-right: 2rem;
-  border-radius: 3px;
-  padding: 0.25rem;
+  border-radius: 6px;
+  padding: 8px;
   background-color: dimgray;
   color: white;
+  cursor: pointer;
+  border: none;
+  transition: .2s;
+}
+
+#button-reset:hover {
+  background-color: rgb(163, 163, 163);
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
 }
 
 #button-regras {
   border-radius: 6px;
-  padding: .2rem;
-  background-color: lightcoral;
+  padding: 8px;
+  background-color: rgb(243, 77, 77);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: .2s;
+}
 
+#button-regras:hover {
+  background-color: rgb(255, 106, 106);
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
 }
 
 div {
