@@ -109,18 +109,6 @@ ul#out li {
   z-index: 0;
 }
 
-#pipe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 3.125rem;
-  width: 0.625rem;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 0px 0px 11.25rem 0px;
-  background-color: darkgray;
-}
-
 #mobile-alert {
   height: 100vh;
   background-color: black;
@@ -153,6 +141,7 @@ ul#out li {
   margin: 50px;
   z-index: 0;
 }
+
 .circulo-two {
   position: absolute;
   top: -150px;
