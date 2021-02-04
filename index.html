@@ -5,45 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  
-  <title>Ligue-4</title>
 
-  <div class="header">
-    <h1 id="header-text">Ligue-4</h1>
-    <div class="buttons">
-      <button id="button-reset">RESET</button>
-      <button id="button-regras">REGRAS</button>
-    </div>
-  </div>
+  <title>Ligue-4</title>
 </head>
 
 <body>
-  <section >
-    <div class="content"> 
-      <div id="pipe"></div>
+  <div id="mobile-alert">
+    <h2>Infelizmente essa aplicação ainda não tem suporte para telas pequenas.</h2>
+  </div>
 
-      <ul id="ul">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-      <ul id="out">
-        <div class="circulo"></div>
-        <div class="circulo-two"></div>
-        <li class="lis"></li>
-        <li class="lis"></li>
-        <li class="lis"></li>
-        <li class="lis"></li>
-        <li class="lis"></li>
-        <li class="lis"></li>
-        <li class="lis"></li>
-      </ul>
+  <header>
+    <h1 id="header_text">Ligue-4</h1>
+    <div id="button_container">
+      <button class="buttons" id="button_reset">RESET</button>
+      <button class="buttons" id="button_regras">REGRAS</button>
     </div>
-  </section>
+  </header>
+
+  <div id="board">
+    <ul id="ul">
+
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul id="out">
+      <li class="lis"></li>
+      <li class="lis"></li>
+      <li class="lis"></li>
+      <li class="lis"></li>
+      <li class="lis"></li>
+      <li class="lis"></li>
+      <li class="lis"></li>
+    </ul>
+  </div>
+
+  <script src="js/mobilesupport.js"></script>
+  <script src="js/Ball.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
 </html>
