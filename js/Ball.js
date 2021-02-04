@@ -11,7 +11,7 @@ class Ball{
         let height=0
         parent.childNodes.length?parent.childNodes.forEach(b=>{height+=el.offsetHeight+5}):0
         parent.innerHTML+=`<p class="${this.nameP}"></p>`
-        el.style.left=parent.offsetLeft-((this.ball.offsetWidth/2)+10)+"px"
+        el.style.left=parent.offsetLeft-((this.ball.offsetWidth/2)+15)+"px"
         let cont=el.offsetTop
         setTimeout(()=>{
             //sound of the falling ball
