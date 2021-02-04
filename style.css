@@ -6,7 +6,7 @@
 }
 
 #header-text {
-  /* width: 60%; */
+  width: 100%;
   font-size: 3.438rem;
 }
 
@@ -24,7 +24,7 @@
   color: white;
   cursor: pointer;
   border: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 #button-reset:hover {
@@ -40,7 +40,7 @@
   color: white;
   cursor: pointer;
   border: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 #button-regras:hover {
@@ -49,10 +49,10 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
 }
 
-div {
+#board {
   position: relative;
-  /* width: 37.5rem; */
-  display: flex;
+  width: 37.5rem;
+  margin: auto;
 }
 
 .content {
@@ -72,16 +72,15 @@ ul#ul {
 
 ul#ul li {
   list-style-type: none;
-  width: 1.375rem;
+  width: calc(100% / 7);
   height: 28.125rem;
-  /* margin-left: 5px; */
-
+  background-color: red;
 }
 
 ul#out {
   position: absolute;
   top: 0;
-  width: 50%;
+  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -92,10 +91,9 @@ ul#out {
 
 ul#out li {
   list-style-type: none;
-  width: 4.375rem;
+  width: calc(100% / 7);
   height: 28.125rem;
   margin-left: 13px;
-  /* background-color: blue */
 }
 
 .bolinha {
