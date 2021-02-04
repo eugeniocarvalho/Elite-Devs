@@ -2,6 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 4rem;
+}
+
+#header-text {
+  width: 100%;
+  font-size: 3.438rem;
+}
+
+.buttons {
+  border: 0;
+  border-style: none;
+  border-width: 0;
+}
+
+#button-reset {
+  margin-right: 2rem;
+  border-radius: 6px;
+  padding: 8px;
   margin: auto 4rem;
 }
 
@@ -16,20 +34,43 @@
   padding: 4px;
   background-color: dimgray;
   color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+#button-reset:hover {
+  background-color: rgb(163, 163, 163);
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
 }
 
 #button-regras {
   border-radius: 6px;
-  padding: 4px;
-  background-color: lightcoral;
+  padding: 8px;
+  background-color: rgb(243, 77, 77);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
 
+#button-regras:hover {
+  background-color: rgb(255, 106, 106);
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+#board {
+  position: relative;
+  width: 37.5rem;
+  margin: auto;
 }
 
 .content {
-  position: relative;
-  width: 600px;
-  margin: 50px auto;
-
+  width: 37.5rem;
+  margin: auto;
+  display: flex;
 }
 
 ul#ul {
@@ -43,10 +84,8 @@ ul#ul {
 
 ul#ul li {
   list-style-type: none;
-  width: 70px;
-  height: 450px;
-  margin-left: 5px;
-
+  width: calc(100% / 7);
+  height: 28.125rem;
 }
 
 ul#out {
@@ -63,18 +102,17 @@ ul#out {
 
 ul#out li {
   list-style-type: none;
-  width: 70px;
-  height: 450px;
+  width: calc(100% / 7);
+  height: 28.125rem;
   margin-left: 13px;
-  /* background-color: blue */
 }
 
 .bolinha {
   position: absolute;
   top: 0px;
-  left: 15px;
-  width: 65px;
-  height: 65px;
+  left: 0.938rem;
+  width: 4.063rem;
+  height: 4.063rem;
   background-color: darkblue;
   border-radius: 360px;
   z-index: 0;
@@ -84,27 +122,10 @@ ul#out li {
   position: absolute;
   left: 0px;
   left: 0px;
-  height: 50px;
-  width: 10px;
+  height: 3.125rem;
+  width: 0.625rem;
   padding: 0px;
   margin: 0px;
-  border-radius: 0px 0px 180px 0px;
+  border-radius: 0px 0px 11.25rem 0px;
   background-color: darkgray;
 }
-
-.circulo {
-  width: 72px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgb(55, 110, 168);
-  margin: 22px;
-  margin-left: 28px;
-  }
-  .circulo-two{
-    width: 72px;
-  height: 50px;
-    border-radius: 50%;
-    background-color: rgb(149, 38, 35);
-    margin: 20px;
-    margin-left: 12px;
-    }
