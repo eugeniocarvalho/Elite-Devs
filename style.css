@@ -1,3 +1,108 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 4rem;
+}
+
+#header-text {
+  font-size: 4rem;
+}
+
+#button-reset {
+  margin-right: 2rem;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: dimgray;
+  color: white;
+}
+
+#button-regras {
+  border-radius: 6px;
+  padding: 4px;
+  background-color: lightcoral;
+
+}
+
+.content {
+  position: relative;
+  width: 600px;
+  margin: 50px auto;
+
+}
+
+ul#ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background: url("background/board.png");
+  background-size: cover;
+}
+
+ul#ul li {
+  list-style-type: none;
+  width: 70px;
+  height: 450px;
+  margin-left: 5px;
+
+}
+
+ul#out {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background: url("background/board2.png");
+  background-size: cover;
+  z-index: 1;
+}
+
+ul#out li {
+  list-style-type: none;
+  width: 70px;
+  height: 450px;
+  margin-left: 13px;
+  /* background-color: blue */
+}
+
+.bolinha {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 65px;
+  height: 65px;
+  background-color: darkblue;
+  border-radius: 360px;
+  z-index: 0;
+}
+
+.circulo {
+  position: absolute;
+  top:-150px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(55, 110, 168);
+  border: 5px solid rgb(55, 110, 168);
+  margin: 50px;
+  z-index: 0;
+}
+  .circulo-two{
+    position: absolute;
+    top:-150px;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(149, 38, 35);
+    border: 5px solid rgb(149, 38, 35);
+    margin: 50px;
+    z-index: 0;
+  }
+
 * {
   margin: 0;
   padding: 0;
