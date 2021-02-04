@@ -9,7 +9,6 @@
   font-size: 4rem;
 }
 
-
 #button-reset {
   margin-right: 2rem;
   border-radius: 3px;
@@ -80,7 +79,6 @@ ul#out li {
   z-index: 0;
 }
 
-
 .circulo {
   position: absolute;
   top:-150px;
@@ -104,3 +102,136 @@ ul#out li {
     margin: 50px;
     z-index: 0;
   }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header_text {
+  font-size: 3.438rem;
+}
+
+#button_container {
+  width: max(150px, 20vw);
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  border: 0;
+  border-radius: 6px;
+
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+
+  color: white;
+}
+
+.buttons:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+#button_reset {
+  background-color: dimgray;
+}
+
+#button_reset:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+#button_regras {
+  background-color: rgb(243, 77, 77);
+}
+
+#button-regras:hover {
+  background-color: rgb(255, 106, 106);
+}
+
+#board {
+  position: relative;
+  width: 37.5rem;
+  margin: 10vh auto auto auto;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+
+  display: flex;
+  position: absolute;
+}
+
+ul li {
+  list-style-type: none;
+  width: calc(100% / 7);
+  height: 28.125rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul#ul {
+  background: url("background/board.png");
+  background-size: cover;
+}
+
+ul#out {
+  background: url("background/board2.png");
+  background-size: cover;
+  z-index: 1;
+}
+
+ul#out li {
+  margin-left: 13px;
+}
+
+.bolinha {
+  width: 4rem;
+  height: 4rem;
+  background-color: darkblue;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+#pipe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 3.125rem;
+  width: 0.625rem;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px 0px 11.25rem 0px;
+  background-color: darkgray;
+}
+
+#mobile-alert {
+  height: 100vh;
+  background-color: black;
+  color: white;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
