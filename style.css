@@ -20,6 +20,18 @@
   margin-right: 2rem;
   border-radius: 6px;
   padding: 8px;
+  margin: auto 4rem;
+}
+
+#header-text {
+  font-size: 4rem;
+}
+
+
+#button-reset {
+  margin-right: 2rem;
+  border-radius: 3px;
+  padding: 4px;
   background-color: dimgray;
   color: white;
   cursor: pointer;
@@ -74,7 +86,6 @@ ul#ul li {
   list-style-type: none;
   width: calc(100% / 7);
   height: 28.125rem;
-  background-color: red;
 }
 
 ul#out {
