@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <title>Ligue-4</title>
+  </head>
 
-  <title>Ligue-4</title>
-</head>
-
-<body>
-  <div id="mobile-alert">
-    <h2>Infelizmente essa aplicação ainda não tem suporte para telas pequenas.</h2>
-  </div>
-
-  <header>
-    <h1 id="header_text">Ligue-4</h1>
-    <div id="button_container">
-      <button class="buttons" id="button_reset">RESET</button>
-      <button class="buttons" id="button_regras">REGRAS</button>
+  <body>
+    <div id="mobile-alert">
+      <h2>
+        Infelizmente essa aplicação ainda não tem suporte para telas pequenas.
+      </h2>
     </div>
-  </header>
 
-  <div id="board">
-    <ul id="ul">
+    <header>
+      <h1 id="header_text">Ligue-4</h1>
+      <div id="button_container">
+        <button class="buttons" id="button_reset">RESET</button>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="buttons"
+          id="button_regras"
+        >
+          REGRAS
+        </button>
+        <div class="w3-container">
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-display-topright"
+                  >&times;</span
+                >
+                <p>
+                  No início do jogo cada jogador escolhe uma cor (amarela ou
+                  azul) e recebe as 21 fichas da cor correspondente. O jogador
+                  com as fichas amarelas começa a partida colocando a primeira
+                  ficha e os jogadores se revezam colocando 1 ficha de cada vez.
+                  Para vencer, os jogadores devem colocar as fichas
+                  estratégicamente na base, de forma a formar uma sequência com
+                  as 4 fichas da sua cor, ao mesmo tempo em que devem prestar
+                  atenção para bloquear as tentativas do oponente fazer o mesmo.
+                  O primeiro jogador que conseguir formar uma sequência de 4
+                  peças é o vencedor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul id="out">
-      <li class="lis"></li>
-      <li class="lis"></li>
-      <li class="lis"></li>
-      <li class="lis"></li>
-      <li class="lis"></li>
-      <li class="lis"></li>
-      <li class="lis"></li>
-    </ul>
-  </div>
+    <div id="board">
+      <ul id="ul">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul id="out">
+        <li class="lis"></li>
+        <li class="lis"></li>
+        <li class="lis"></li>
+        <li class="lis"></li>
+        <li class="lis"></li>
+        <li class="lis"></li>
+        <li class="lis"></li>
+      </ul>
+    </div>
 
-  <script src="js/mobilesupport.js"></script>
-  <script src="js/Ball.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/mobilesupport.js"></script>
+    <script src="js/Ball.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
