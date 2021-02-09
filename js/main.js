@@ -15,11 +15,26 @@ function validateCreation(path){
     })
     return val>=6?false:true
 }
+
+let jogador = 0
+function toggle(){
+    let vetor1 =["circulo"]
+    let vetor2 =["circulo-two"]
+    if (jogador==0){
+        jogador++;
+        return vetor1
+    }
+    else if(jogador==1){
+        jogador--;
+        return vetor2
+    }
+}
+
 function listener(tag){
     if(tag){
         tag.forEach(el => {
             el.addEventListener("click",e=>{
-            validateCreation(e.target)?new Ball(createEl(parents,"div","class","circulo"),e.target,5,.2,"circle"):0
+            validateCreation(e.target)?new Ball(createEl(parents,"div","class",toggle()),e.target,5,.2,"circle"):0
             })
         });
     }
